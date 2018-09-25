@@ -9,10 +9,6 @@ public class MostCommonWord819 {
             bannedList.add(b);
         String[] words = paragraph.split(" ");
         for (int i = 0; i < words.length; i++) {
-            System.out.print(words[i] + " ");
-        }
-        System.out.println("cool");
-        for (int i = 0; i < words.length; i++) {
             String key = generateKey(words[i]);
             if (values.containsKey(key))
                 values.put(key, values.get(key) + 1);
